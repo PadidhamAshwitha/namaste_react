@@ -13,8 +13,9 @@ const [resInfo,setResInfo ] = useState(null);
         const data = await fetch(MENU_URL + resid);
         const json = await data.json();
         setResInfo(json.data);
+        //console.log(json.data);
     }
-    console.log(resInfo);
+    //console.log(resInfo);
     return resInfo;
 };
 
